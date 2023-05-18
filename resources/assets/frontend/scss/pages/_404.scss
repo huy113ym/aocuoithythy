@@ -1,0 +1,20 @@
+.not-found {
+	text-align: center;
+    padding-bottom: 80px;
+
+    h1 {
+        color: $color-default;
+        margin-bottom: 10px;
+    }
+
+    img {
+        max-width: calc(100% - 40px);
+        width: 600px;
+        height: auto;
+        object-fit: cover;
+    }
+
+	a {
+		margin-top: 30px;
+	}
+}

@@ -1,0 +1,102 @@
+.btn {
+	display: inline-block;
+	position: relative;
+	background-color: $color-default;
+	padding: 0.8em 1.5em;
+	color: $color-white;
+	border-radius: $radius-tertiary;
+	letter-spacing: 1px;
+}
+
+.btn-default {
+	-o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	background-size: 500% 100%;
+	background-image: linear-gradient(to right, $color-default, $color-default-hover, $color-default-hover, $color-default);
+
+	&:hover {
+		background-position: 100% 0;
+		-o-transition: all 0.5s ease-in-out;
+		-webkit-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+.btn-white {
+	background-color: $color-white-transparent;
+	font-weight: bold;
+	background-color: transparent;
+	color: $color-default;
+	border: 1px solid $color-default;
+}
+
+.btn-icon-left {
+	padding-left: 50px;
+
+	img {
+		position: absolute;
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+	}
+}
+
+.btn-icon-right {
+	padding-right: 50px;
+
+	img {
+		position: absolute;
+		top: 48%;
+		right: 20px;
+		transform: translateY(-50%);
+		transition: $transition-default;
+	}
+
+	&:hover {
+
+		img {
+			right: 15px;
+		}
+	}
+}
+
+.link {
+	display: inline-block;
+	padding: 6px 0;
+
+	.icon {
+		position: relative;
+		transition: $transition-default;
+		right: 0;
+	}
+
+	&:hover {
+
+		.icon {
+			right: -5px;
+		}
+	}
+}
+
+button {
+	border: 0;
+}
+
+
+// Responsive
+
+@media screen and (max-width: $xl) {
+
+	.btn {
+		padding: 0.6em 1.2em;
+	}
+
+	.btn-icon-left {
+		padding-left: 46px;
+	}
+
+	.btn-icon-right {
+		padding-right: 46px;
+	}
+}

@@ -1,0 +1,47 @@
+.contact-page {
+	text-align: center;
+	margin: 50px 0 70px;
+
+	h2 {
+		color: $color-default;
+		margin-bottom: 10px;
+	}
+
+	form {
+		max-width: 450px;
+		margin: 0 auto;
+		margin-top: 35px;
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		textarea,
+		input {
+			text-align: center;
+			border-radius: 0;
+			border: 0;
+			border-bottom: 1px solid $border-color;
+
+			&:focus {
+				border-color: $color-default;
+			}
+		}
+
+		.error {
+			color: $color-red;
+			font-size: 0.9em;
+		}
+	}
+}
+
+
+@media screen and (max-width: $md) {
+
+	.contact-page {
+
+		br {
+			display: none;
+		}
+	}
+}

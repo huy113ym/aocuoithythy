@@ -1,0 +1,105 @@
+.page-content {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 60px;
+
+	h2 {
+		color: $color-default;
+		font-size: 1.5em;
+		line-height: 1.3em;
+		margin-bottom: 10px;
+	}
+
+	.heading {
+		color: $color-default;
+		font-size: 1.5em;
+		line-height: 1.2em;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	ul {
+		padding-left: 20px;
+		margin-bottom: 20px;
+
+		li {
+			line-height: 1.2em;
+			margin-bottom: 10px;
+		}
+	}
+
+	img {
+		max-width: 100%;
+
+		&.align-center {
+		    margin: 0 auto;
+		    text-align: center;
+		    display: table;
+		}
+	}
+
+	blockquote {
+	    padding: 5px 30px 5px 40px;
+	    position: relative;
+	    font-style: italic;
+
+	    &::before {
+	    	position: absolute;
+	    	color: $color-default;
+	    	font-size: 1.7em;
+	    	width: 20px;
+	    	height: 20px;
+	    	left: 0;
+	    	top: 0;
+	    }
+	}
+
+	table {
+		border: 1px solid $border-color;
+		max-width: 1000px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+
+		tbody {
+
+			tr {
+				border-bottom: 1px solid $border-color;
+
+				td {
+					padding: 7px 15px;
+					border-right: 1px solid $border-color;
+				}
+			}
+		}
+	}
+
+	&.has-sidebar {
+		width: calc(100% - 350px);
+		float: left;
+	}
+}
+
+
+@media screen and (max-width: $ml) {
+
+	.page-content {
+
+		&.has-sidebar {
+			width: 100%;
+			float: none;
+			margin-bottom: 30px;
+		}
+	}
+
+	.side-bar {
+		width: 100%;
+		float: none;
+		margin-bottom: 50px;
+		border: 0;
+		padding-left: 0;
+	}
+}

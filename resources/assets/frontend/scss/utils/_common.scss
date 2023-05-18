@@ -1,0 +1,37 @@
+#spacing {
+    display: block;
+    height: 150px;
+}
+
+.container {
+    width: calc(100% - 30px);
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+
+// Animation
+
+@keyframes blind {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+
+// Responsive
+
+@media screen and (max-width: $lg) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

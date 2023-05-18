@@ -1,0 +1,52 @@
+
+/* fonts */
+
+$primary-font: 'Quicksand', sans-serif;
+
+
+/* default theme colors */
+
+$color-default: #FC5F2F;
+$color-default-hover: #e47f60;
+
+
+/* colors */
+
+$color-white: #ffffff;
+$color-white-transparent: rgba(255, 255, 255, 0.6);
+$color-black: #191919;
+$color-gray: #6e6e6e;
+$color-gray-lite: #ebebeb;
+$color-red: #e23e1d;
+
+$color-violet: #dfbadf;
+$color-violet-lite: #fbf4fb;
+
+/* Border Color */
+$border-color: #e1e1e1;
+$border-color-lite: #ebebeb;
+
+
+/* screen size */
+
+$xxl: 1366px;
+$xl: 1270px;
+$ml: 1080px;
+$lg: 1024px;
+$md: 768px;
+$sm: 320px;
+
+/* miscellaneous */
+
+$radius-default: 2px;
+$radius-primary: 5px;
+$radius-secondary: 10px;
+$radius-tertiary: 30px;
+$radius-full: 100%;
+
+$transition-default: all 150ms ease-in-out;
+$transition-primary: all 200ms ease-in-out;
+$transition-secondary: all 300ms ease-in-out;
+
+$box-shadow-default: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+$box-shadow-primary: 0 0 16px 0 rgba(0, 0, 0, 0.1);

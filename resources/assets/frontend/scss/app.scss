@@ -1,0 +1,55 @@
+/*
+|         _   _                   _
+|        | | | |                 | |
+|        | |_| | _   _  _   _    | |      ___
+|        |  _  || | | || | | |   | |     / _ \
+|        | | | || |_| || |_| | _ | |____|  __/
+|        \_| |_/ \__,_| \__, |(_)\_____/ \___|
+|                        __/ |
+|                       |___/
+|
+*/
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+// Slick Carousel
+@import 'slick-carousel/slick/slick.scss';
+
+@import
+        'utils/_variables',
+        'utils/_utilities',
+        'utils/_common';
+
+@import
+        'base/_reset',
+        'base/_typography';
+
+@import
+        'components/_custom-select',
+        'components/_tabs',
+        'components/_buttons',
+        'components/_scrollbar',
+        'components/_countdown',
+        'components/_breadcrumb',
+        'components/_form',
+        'components/_alert',
+        'components/_table',
+        'components/_badge',
+        'components/_panel',
+        'components/_pagination',
+        'components/_loader',
+        'components/_modal',
+        'components/postitem';
+
+@import
+        'layout/_header',
+        'layout/_sidebar',
+        'layout/_footer';
+
+@import
+        'pages/_home',
+        'pages/_contact',
+        'pages/_static',
+        'pages/_404';

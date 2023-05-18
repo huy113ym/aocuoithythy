@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+    font-family: $primary-font;
+}
+
+body {
+    direction: ltr;
+    font-family: $primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 320px;
+    color: $color-black;
+    margin: 0;
+    top: 0!important;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, address, p {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, button {
+    &:active, &:focus, &:visited {
+        outline: 0;
+    }
+}
+
+a {
+    display: block;
+    color: $color-default;
+    transition: $transition-default;
+    text-decoration: none;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.tooltip {
+    pointer-events: none;
+
+    > .tooltip-inner {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: $radius-default;
+    }
+}
+
+.hidden {
+    display: none!important;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.not-scroll {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
